@@ -20,7 +20,7 @@ def generer_readme(fichier_html):
     readme_content = []
 
     # --- 1. Bannière  ---
-    readme_content.append('<div align="center"><img src="https://github.com/ksyv/holbertonschool-web_front_end/blob/main/baniere_holberton.png"></div>\n\n')
+    readme_content.append('<div align="center"><img src="https://github.com/vtiquet/holbertonschool-resources/blob/main/image/Holberton-Logo.svg" width=40% height=40%/></div>\n\n')
 
     # --- 2. Titre du Projet  ---
     project_description = soup.find(id="project-description")
@@ -131,7 +131,7 @@ def generer_readme(fichier_html):
 
     # --- 8. Authors ---
     readme_content.append("\n## Authors\n")
-    readme_content.append("Ksyv - [GitHub Profile](https://github.com/ksyv)\n")
+    readme_content.append("vtiquet - [GitHub Profile](https://github.com/vtiquet)\n")
 
     # --- Écriture du fichier README.md ---
     with open("README.md", "w", encoding="utf-8") as f:
